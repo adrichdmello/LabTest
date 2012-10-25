@@ -7,16 +7,30 @@ public class ElevatorDoor implements Door  {
 	{
 		if(this.eDoorState)
 		{
-			this.eDoorState = false;
-			System.out.println("Elevator door closed");
+			closeElevatorDoor();
 		}
 		else
 		{
-			this.eDoorState = true;
-			System.out.println("Elevator door opened");
+			openElevatorDoor();
 		}
 		
 		return eDoorState;
+	}
+
+	/**
+	 * 
+	 */
+	public void openElevatorDoor() {
+		this.eDoorState = true;
+		System.out.println("Elevator door opened");
+	}
+
+	/**
+	 * 
+	 */
+	public void closeElevatorDoor() {
+		this.eDoorState = false;
+		System.out.println("Elevator door closed");
 	}
 	
 	public boolean getDoorState()

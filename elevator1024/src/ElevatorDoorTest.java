@@ -5,15 +5,16 @@ import org.junit.Test;
 
 
 public class ElevatorDoorTest {
-
+	ElevatorDoor eDoor;
 	@Before
 	public void setUp() throws Exception {
+		eDoor  = new ElevatorDoor();
 	}
 
 	@Test
 	public void testToggleOpenDoor() {
 		//fail("Not yet implemented");
-		ElevatorDoor eDoor = new ElevatorDoor();
+	
 		
 		if(eDoor.toggleOpenDoor())
 		{
