@@ -19,6 +19,12 @@ public class building {
 			floors.add(floor);
 		}
 		
+		makeElevator(noFloors);
+	}
+	/**
+	 * @param noFloors
+	 */
+	public void makeElevator(int noFloors) {
 		System.out.println("Building with "+ noFloors +" floors created");
 		elevator = new Elevator(totalFloors);
 	}
