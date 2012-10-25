@@ -1,5 +1,5 @@
 
-public class ElevCallButton {
+public class ElevCallButton implements Runnable {
 
 	int fno;
 	boolean state = false;
@@ -14,6 +14,10 @@ public class ElevCallButton {
 		fDoor = new FloorDoor();
 	}
 
+	public void run() {
+		press();
+	}
+	
 	public void press()
 	{
 		if(this.state)
